@@ -6,9 +6,9 @@ const connectDatabase = require('./config/database');
 dotenv.config({path:path.join(__dirname,"config/config.env")});
 
 connectDatabase();
-
-const server = app.listen(process.env.PORT,() => {
-    console.log(`Server listen to the port: ${process.env.PORT} in ${process.env.NODE_ENV}`)
+const PORT ="https://workorder-vendor-servermain-8osl8w9yk-selvakumarj1807s-projects.vercel.app/";
+const server = app.listen(PORT,() => {
+    console.log(`Server listen to the port: ${PORT} in ${process.env.NODE_ENV}`)
 })
 
 process.on('unhandledRejection',(err)=>{
